@@ -38,10 +38,10 @@ const ConversionWidget = ({ onNext }: ConversionWidgetProps) => {
   }
 
   return (
-    <div className='w-full max-w-[90vw] sm:max-w-135 md:max-w-160 lg:max-w-200 xl:max-w-225 bg-white border border-[#CCF6E5] flex flex-col items-center justify-center gap-6 md:gap-8 lg:gap-10 rounded-[20px] md:rounded-[25px] lg:rounded-[30px]'>
-      <header className='pt-6 md:pt-8 lg:pt-10 w-full px-4'>
-        <nav className='rounded-[20px] md:rounded-[25px] lg:rounded-[30px] bg-[#F2F2F2] overflow-x-auto'>
-          <ul className='flex items-center min-w-max p-1 md:p-1.5'>
+    <div className='w-full sm:max-w-135 md:max-w-160  bg-white border border-[#CCF6E5] flex flex-col items-center justify-center gap-6 md:gap-8 lg:gap-10 rounded-[20px] md:rounded-[25px] lg:rounded-[30px]'>
+      <header className='pt-6 md:pt-8 lg:pt-10 px-31'>
+        <nav className='rounded-[20px] md:rounded-[25px] w-98 lg:rounded-[30px] bg-[#F2F2F2] overflow-x-auto'>
+          <ul className='flex items-center min-w-max '>
             {tabs.map((tab, index) => (
               <li key={tab.id} className='flex items-center'>
                 <button

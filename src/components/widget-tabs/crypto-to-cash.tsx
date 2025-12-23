@@ -112,7 +112,7 @@ const CryptoToCash = ({ onNext }: { onNext: () => void }) => {
   const [payTo, setPayTo] = useState<SelectOption | null>(null)
 
   return (
-    <div className='flex flex-col gap-6 md:gap-8 lg:gap-10 w-full pb-8 md:pb-12 lg:pb-14 px-4 md:px-8 lg:px-16'>
+    <div className='flex flex-col gap-6 md:gap-8 lg:gap-10 w-full pb-8 md:pb-12 lg:pb-14 px-4 md:px-8'>
       <div className='flex flex-col gap-4 md:gap-5 lg:gap-6 w-full'>
         <div className='w-full'>
           <Card title='You pay' amount={1.0} variant='pay' options={options} />
