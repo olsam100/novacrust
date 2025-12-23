@@ -38,16 +38,16 @@ const ConversionWidget = ({ onNext }: ConversionWidgetProps) => {
   }
 
   return (
-    <div className='w-full sm:max-w-135 md:max-w-160  bg-white border border-[#CCF6E5] flex flex-col items-center justify-center gap-6 md:gap-8 lg:gap-10 rounded-[20px] md:rounded-[25px] lg:rounded-[30px]'>
-      <header className='pt-6 md:pt-8 lg:pt-10 px-31'>
-        <nav className='rounded-[20px] md:rounded-[25px] w-98 lg:rounded-[30px] bg-[#F2F2F2] overflow-x-auto'>
-          <ul className='flex items-center min-w-max '>
+    <div className='w-full sm:max-w-135 md:max-w-160 bg-white border border-[#CCF6E5] flex flex-col items-center justify-center gap-6 md:gap-8 lg:gap-10 rounded-[20px] md:rounded-[25px] lg:rounded-[30px]'>
+      <header className='pt-6 md:pt-8 lg:pt-10 px-4 sm:px-6 md:px-8 lg:px-31 w-full flex justify-center'>
+        <nav className='rounded-[20px] md:rounded-[25px] lg:rounded-[30px] w-full sm:w-auto md:w-98 bg-[#F2F2F2] overflow-x-auto'>
+          <ul className='flex items-center min-w-max'>
             {tabs.map((tab, index) => (
               <li key={tab.id} className='flex items-center'>
                 <button
                   onClick={() => setTabIndex(index)}
                   className={classNames(
-                    'cursor-pointer flex items-center justify-center px-3 py-1.5 md:px-4 md:py-2 font-medium text-xs md:text-sm whitespace-nowrap transition-all',
+                    'cursor-pointer flex items-center justify-center px-2.5 py-1.5 sm:px-3 sm:py-1.5 md:px-4 md:py-2 font-medium text-xs md:text-sm whitespace-nowrap transition-all',
                     tabIndex === index
                       ? 'bg-[#013941] text-white rounded-2xl md:rounded-[20px] lg:rounded-[30px]'
                       : 'text-[#828282]'
